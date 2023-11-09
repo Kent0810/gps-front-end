@@ -1,3 +1,5 @@
+import { EuiProvider } from '@elastic/eui';
+import '@elastic/eui/dist/eui_theme_light.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -8,6 +10,7 @@ import Dashboard from './pages/dashboard/Dashboard.jsx';
 import ErrorPage from './pages/errors/ErrorPage';
 import EventDashboard from './pages/events/EventDashboard';
 import StreamDashboard from './pages/streams/list/StreamDashboard.jsx';
+import StreamViewer from './pages/streams/viewer/StreamViewer';
 
 const router = createBrowserRouter([
   {
@@ -24,11 +27,15 @@ const router = createBrowserRouter([
         element: <StreamDashboard />,
       },
       {
-        path: '/cameras',
+        path: '/streams/cameras',
         element: <CameraDashboard />,
       },
       {
-        path: '/events',
+        path: '/streams/views/:streamId',
+        element: <StreamViewer />,
+      },
+      {
+        path: '/detection/events',
         element: <EventDashboard />,
       },
     ],
@@ -37,6 +44,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <EuiProvider colorMode='light'>
+      <RouterProvider router={router} />
+    </EuiProvider>
   </React.StrictMode>
 );

@@ -1,5 +1,12 @@
+import { useTitle } from 'ahooks';
+import { useParams } from 'react-router-dom';
+
 function StreamViewer() {
-    return <div>Stream Viewer</div>;
+  useTitle('ALSS - Stream', {
+    restoreOnUnmount: true,
+  });
+  const params = useParams();
+  return <div>Stream Viewer: {params.streamId}</div>;
 }
 
 export default StreamViewer;
