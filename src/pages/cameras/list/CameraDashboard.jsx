@@ -52,6 +52,7 @@ function CameraDashboard() {
         description={'Register and manage credentials of connected cameras'}
         tabs={tabs}
       />
+      
     </>
   );
 }

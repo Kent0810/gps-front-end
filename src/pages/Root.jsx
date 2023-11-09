@@ -23,9 +23,11 @@ import { icon as EuiIconControlsHorizontal } from '@elastic/eui/es/components/ic
 import { icon as EuiIconDocuments } from '@elastic/eui/es/components/icon/assets/documents';
 import { icon as EuiIconInputOutput } from '@elastic/eui/es/components/icon/assets/inputOutput';
 import { icon as EuiIconMenu } from '@elastic/eui/es/components/icon/assets/menu';
+import { icon as EuiIconSortRight } from '@elastic/eui/es/components/icon/assets/sortRight';
 import { icon as EuiIconTimeline } from '@elastic/eui/es/components/icon/assets/timeline';
 import { icon as EuiIconVideoPlayer } from '@elastic/eui/es/components/icon/assets/videoPlayer';
 import { icon as EuiIconVisarea } from '@elastic/eui/es/components/icon/assets/vis_area';
+
 import { useState } from 'react';
 
 appendIconComponentCache({
@@ -39,6 +41,7 @@ appendIconComponentCache({
   controlsHorizontal: EuiIconControlsHorizontal,
   apmTrace: EuiIconApmTrace,
   inputOutput: EuiIconInputOutput,
+  sortRight: EuiIconSortRight,
 });
 
 function RootLayout() {
