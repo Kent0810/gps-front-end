@@ -1,0 +1,16 @@
+.mapboxgl-popup-tip {
+  display: none;
+}
+.mapboxgl-popup-content {
+  background: #0d284b;
+  color: white;
+  padding-inline: 20px;
+}
+.mapboxgl-popup-content h1 {
+  color: #d0312d;
+  font-weight: bold;
+}
+
+.mapboxgl-popup-content h2 {
+  color: #e28a3c;
+}

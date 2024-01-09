@@ -1,9 +1,9 @@
-import { useTitle } from 'ahooks';
-import { useRouteError } from 'react-router-dom';
+import { useTitle } from "ahooks";
+import { useRouteError } from "react-router-dom";
 
 function ErrorPage() {
   const error = useRouteError();
-  useTitle('ALSS - Error', {
+  useTitle("KID-GPS - Error", {
     restoreOnUnmount: true,
   });
   console.error(error);
