@@ -68,15 +68,14 @@ function RootLayout() {
     createNavigation("Dashboard", "", [createNavigation("Home", "/", [])], {
       icon: <EuiIcon type={"visArea"} />,
     }),
-    // createNavigation(
-    //   "Streams",
-    //   "",
-    //   [
-    //     createNavigation("Discover", "/streams", []),
-    //     createNavigation("Cameras", "/streams/cameras", []),
-    //   ],
-    //   { icon: <EuiIcon type={"inputOutput"} /> }
-    // ),
+    createNavigation(
+      "Device",
+      "",
+      [
+        createNavigation("Battery", "/battery", []),
+      ],
+      { icon: <EuiIcon type={"inputOutput"} /> }
+    ),
     // createNavigation(
     //   "Detection",
     //   "",

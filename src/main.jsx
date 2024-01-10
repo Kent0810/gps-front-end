@@ -7,6 +7,7 @@ import "./index.css";
 import RootLayout from "./pages/Root";
 import Dashboard from "./pages/dashboard/Dashboard.jsx";
 import ErrorPage from "./pages/errors/ErrorPage";
+import Battery from "./pages/battery/Battery.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Dashboard />,
       },
+      {
+        path: "/battery",
+        element: <Battery />
+      }
     ],
   },
 ]);
