@@ -95,7 +95,7 @@ function Dashboard() {
         <div
           ref={mapContainer}
           style={{
-            height: "720px",
+            height: "920px",
           }}
           className="map-container"
         />

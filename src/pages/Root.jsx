@@ -73,6 +73,7 @@ function RootLayout() {
       "",
       [
         createNavigation("Battery", "/battery", []),
+        createNavigation("Background", "/background",[])
       ],
       { icon: <EuiIcon type={"inputOutput"} /> }
     ),
@@ -103,7 +104,7 @@ function RootLayout() {
           <EuiHeaderLogo iconType="/logo.png" iconTitle="KID-GPS">
             KID-GPS
           </EuiHeaderLogo>
-          <EuiHeaderLink href="https://github.com/">Code</EuiHeaderLink>
+          <EuiHeaderLink href="https://github.com/Kent0810/gps-front-end">Code</EuiHeaderLink>
         </EuiHeaderSectionItem>
         <EuiHeaderSectionItem>
           <EuiHeaderSectionItemButton>

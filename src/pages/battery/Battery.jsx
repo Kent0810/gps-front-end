@@ -63,7 +63,7 @@ export const Battery = () => {
                         footer={
                             <EuiFlexGroup justifyContent="space-evenly" alignItems="center">
                                 <EuiFlexItem>
-                                    <EuiButton><EuiBeacon /> Mark As Lost</EuiButton>
+                                    <EuiButton onClick={() => {alert("Sound Played")}}><EuiBeacon /> Mark As Lost</EuiButton>
                                 </EuiFlexItem>
                                 <EuiFlexItem grow={false}>
                                     <div style={{
